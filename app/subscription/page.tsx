@@ -1,5 +1,13 @@
+import Navbar from "../_components/navbar";
+
 const SubscriptionPage = () => {
-  return <div>subscription</div>;
+  return (
+    <>
+      <Navbar />
+
+      <div>subscription</div>
+    </>
+  );
 };
 
 export default SubscriptionPage;
