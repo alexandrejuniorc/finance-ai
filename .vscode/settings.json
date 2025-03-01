@@ -1,3 +1,4 @@
 {
-  "cSpell.words": ["datasource", "uuid"]
+  "cSpell.words": ["datasource", "uuid"],
+  "editor.fontFamily": "JetBrains Mono"
 }
