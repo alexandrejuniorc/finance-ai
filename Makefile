@@ -1,4 +1,6 @@
-# Makefile for the project
+.PHONY: default run build test clean
+
+STRIPE_URL_WEBHOOKS=http://localhost:3000/api/webhooks/stripe
 
 ## Docker
 docker/dev/start:
@@ -30,4 +32,4 @@ stripe/dev/login:
 	@stripe login
 
 stripe/dev/listen:
-	@stripe listen --forward-to http://localhost:3000/api/webhooks/stripe
+	@stripe listen --forward-to $(STRIPE_URL_WEBHOOKS)
